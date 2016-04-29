@@ -119,7 +119,7 @@
         "no-use-before-define": ["error"],
 
         "callback-return": ["error"],
-        "global-require": ["warn"],
+        "global-require": ["off"],
         "handle-callback-err": ["error", "error"],
         "no-mixed-requires": ["off"],
         "no-new-require": ["error"],

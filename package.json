@@ -6,7 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["image", "open", "view", "cli", "cli-app"],
+  "keywords": [
+    "image",
+    "open",
+    "view",
+    "cli",
+    "cli-app"
+  ],
   "author": "Arnelle Balane <arnellebalane@gmail.com> (arnellebalane.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "is-url": "^1.2.1",
+    "pify": "^2.3.0"
+  }
 }
