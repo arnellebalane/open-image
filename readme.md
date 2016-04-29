@@ -14,7 +14,7 @@ npm install --save open-image
 
 or globally:
 
-```
+```bash
 npm install -g open-image
 ```
 
