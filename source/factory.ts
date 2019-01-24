@@ -2,8 +2,13 @@ import path from 'path';
 import execa from 'execa';
 import isUrl from 'is-url';
 
-export default function factory(commands) {
-    async function getCommand() {
+type OpenImageCommand = {
+    command: string,
+    parameters: Array<string>
+}
+
+export default function factory(commands: Array<OpenImageCommand>) {
+    async function getCommand(): Promise<OpenImageCommand | null> {
         const availableCommands = await Promise.all(commands.map(async command => {
             try {
                 await execa.stdout('which', [command.command]);
@@ -16,7 +21,7 @@ export default function factory(commands) {
         return availableCommands.filter(Boolean)[0] || null;
     }
 
-    return async function openImage(imagePath) {
+    return async function openImage(imagePath: string) {
         const command = await getCommand();
         if (!command) {
             return Promise.reject(new Error('No command to open the image is available in your platform.'));
