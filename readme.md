@@ -1,41 +1,39 @@
-open-image
-==========
+# open-image
 
 Open/view an image.
 
 
-### Install
+## Installation
 
-You can install it locally:
+You can install it locally to use the API:
 
 ```bash
-npm install --save open-image
+npm install open-image
 ```
 
-or globally:
+or globally to use the CLI:
 
 ```bash
 npm install -g open-image
 ```
 
 
-### Usage
+## Usage
 
-```javascript
-var openImage = require('open-image');
+```js
+const openImage = require('open-image');
 
 openImage('/path/or/url/to/image.png');
 ```
 
 
-### API
+## API
 
-#### `openImage(imagePath)`
+- **`openImage(imagePath)`**
+  - Opens the image at the given `imagePath`
 
-Opens the image at the given `imagePath`.
 
-
-### CLI
+## CLI
 
 ```bash
 $ open-image --help
@@ -45,10 +43,14 @@ $ open-image --help
   Usage:
     $ open-image <image-path>
 
-  <image-path> can be a filesystem path or a url to the image.
+  <image-path> can be a filesystem path or url to the image
+
+  Examples:
+    $ open-image sample-image.jpg
+    $ open-image http://site.com/image.jpg
 ```
 
 
-### License
+## License
 
 MIT License
