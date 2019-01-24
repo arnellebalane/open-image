@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "babel --delete-dir-on-start --out-dir dist source",
+    "lint": "eslint 'source/**/*.js'",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -35,5 +36,18 @@
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "arnellebalane"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    }
   }
 }
