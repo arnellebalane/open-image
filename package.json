@@ -11,7 +11,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "prebuild": "npm run clean",
     "build": "npm run build:types && npm run build:source",
-    "lint": "eslint 'source/**/*.js'",
+    "lint": "eslint 'source/**/*.ts'",
     "prepublish": "npm run build"
   },
   "keywords": [
