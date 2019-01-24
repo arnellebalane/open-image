@@ -4,7 +4,7 @@ import isUrl from 'is-url';
 
 export default function factory(commands) {
     async function getCommand() {
-        const availableCommands = await Promise.all(commands.map(async (command) => {
+        const availableCommands = await Promise.all(commands.map(async command => {
             try {
                 await execa.stdout('which', [command.command]);
                 return command;
@@ -32,5 +32,5 @@ export default function factory(commands) {
             .map(parameter => parameter.replace('%s', imagePath));
 
         return execa(command.command, parameters);
-    }
+    };
 }
