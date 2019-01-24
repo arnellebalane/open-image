@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import '@babel/polyfill';
 import meow from 'meow';
 import openImage from '.';
 
