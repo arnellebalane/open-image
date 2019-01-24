@@ -17,6 +17,7 @@
   "author": "Arnelle Balane <arnellebalane@gmail.com> (arnellebalane.com)",
   "license": "MIT",
   "dependencies": {
+    "execa": "1.0.0",
     "is-url": "^1.2.1",
     "meow": "5.0.0",
     "pify": "4.0.1"
