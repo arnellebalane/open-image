@@ -5,6 +5,7 @@
   "bin": "dist/cli.js",
   "main": "dist/index.js",
   "scripts": {
+    "type-check": "tsc --noEmit",
     "build": "babel --delete-dir-on-start --out-dir dist source",
     "lint": "eslint 'source/**/*.js'",
     "prepublish": "npm run build"
