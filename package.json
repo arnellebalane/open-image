@@ -2,8 +2,8 @@
   "name": "open-image",
   "version": "0.1.2",
   "description": "Open/view an image",
-  "main": "index.js",
-  "bin": "cli.js",
+  "bin": "dist/cli.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel --delete-dir-on-start --out-dir dist source"
   },
